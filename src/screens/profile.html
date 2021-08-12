@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My profile</title>
+    <link rel="stylesheet" type="text/css" href="../styles/profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id='profileImgContainer'>
+        <img id="profileIconImg" src="../images/profileIcon.png">
+    </div>
+    <img id="iconImg" src="../images/womanIcon.png">
+    <div id="info" style="margin-left:250px;font-weight: normal">
+        <h3>Jane</h3>
+        <div style="display: flex">
+            <h4><a href="followers">300</a> followers</h2>
+                <h4><a href="following">100</a> following</h2>
+        </div>
+    </div>
+    <h3 id='pointsText'>1800 points</h3>
+    <h4 id='subtitle'>"Together we can make a change"</h4>
+    <div id="dashboardBar">
+        <ul>
+            <li onclick="network()" id='net'>Network</li>
+            <li onclick="points()" id='earn'>Earn points!</li>
+            <li onclick="impact()" id='imp'>Your impact</li>
+            <li onclick="search()" id='nearby'>Search nearby</li>
+        </ul>
+    </div>
+    <div class="Points">
+        <div id="post">
+            <div id="container">
+                <h4 style="font-weight: normal">There are plenty of ways to earn points. And the best part... you can
+                    then exchange them for produce!</h4>
+                <h3>1) Post your fruits purchase and earn 70+ points</h3>
+                <div class="post">
+                    <div id="photo">
+                        <h3 style="position: absolute">Upload file +</h3>
+                    </div>
+                    <textarea type="text"
+                        placeholder='Leave a comment! Example: Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange'></textarea>
+                </div>
+                <button>POST</button>
+                <h3>2) Get +30 points for each friend that creates a profile</h3>
+                <h3>3) Get +200 points for having the best ranking of the month</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="Impact">
+
+        <div id="container">
+            <h2>180 posts</h2>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying2.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying1.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying4.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying3.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying5.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying2.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying3.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying1.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying4.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying5.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying1.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+            <div class="manyPosts">
+                <img id="photo" src="../images/buying2.jpg">
+                <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a> #globalImpact
+                    #makeAChange</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="Network">
+
+        <div id="container">
+            <input type="text" placeholder="Search a profile..">
+            <h2>See what others are up to</h2>
+            <div style="margin-top:40px">
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying2.jpg">
+                    <p>Today I bought all this amazing fruits in <a href="marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying1.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying4.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying3.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying5.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying2.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying3.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying1.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying4.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying5.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <img id="photo" src="../images/buying1.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+                <div class="manyPosts">
+                    <div class="networkProfile"></div>
+                    <img id="photo" src="../images/buying2.jpg">
+                    <p>Today I bought all this amazing fruits in <a href=" marketProfile.html">@11Market</a>
+                        #globalImpact #makeAChange</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.Markets').hide();
+            $('#net').addClass('active');
+            $('.Points').hide();
+            $('.Impact').hide();
+            $('.Search').hide();
+        });
+
+        function markets() {
+            $('.Markets').show();
+            $('li').removeClass('active');
+            $('#mark').addClass('active');
+            $('.Points').hide();
+            $('.Impact').hide();
+            $('.Network').hide();
+            $('.Search').hide();
+        }
+        function points() {
+            $('.Points').show();
+            $('.Markets').hide();
+            $('.Impact').hide();
+            $('.Network').hide();
+            $('li').removeClass('active');
+            $('#earn').addClass('active');
+            $('.Search').hide();
+        }
+        function impact() {
+            $('.Impact').show();
+            $('li').removeClass('active');
+            $('#imp').addClass('active');
+            $('.Markets').hide();
+            $('.Points').hide();
+            $('.Network').hide();
+            $('.Search').hide();
+        }
+        function network() {
+            $('.Network').show();
+            $('li').removeClass('active');
+            $('#net').addClass('active');
+            $('.Impact').hide();
+            $('.Markets').hide();
+            $('.Points').hide();
+            $('.Search').hide();
+        }
+        function search() {
+            $('.Search').show();
+            $('li').removeClass('active');
+            $('#nearby').addClass('active');
+            $('.Markets').hide();
+            $('.Points').hide();
+            $('.Impact').hide();
+            $('.Network').hide();
+        }
+
+
+
+    </script>
+</body>
+
+</html>

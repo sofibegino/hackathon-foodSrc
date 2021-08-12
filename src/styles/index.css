@@ -1,0 +1,286 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: #f9fff9;
+}
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+.img {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.hero {
+  width: 50%;
+  float: right;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+      rgba(223, 223, 223, 0.175),
+      rgba(216, 216, 216, 0.1)
+    ),
+    url('../images/fruits.jpg');
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.our-mission p {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  font-size: 18px;
+}
+
+.our-mission {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.w3-container h1 {
+  position: relative;
+  float: left;
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0px;
+  font-size: 55px;
+  font-weight: normal;
+  color: black;
+  padding-right: 40%;
+  margin-top: 60px;
+}
+
+.w3-container span {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.w3-container p {
+  font-size: 18px;
+  padding-top: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+  color: black;
+}
+
+#mainText p {
+  padding: 150px;
+  padding-top: 40px;
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.stores img {
+  width: 40%;
+  height: 40%;
+}
+.separator {
+  width: 100vw;
+  text-align: center;
+  justify-content: flex-start;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(248, 248, 248);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.separator .title {
+  color: rgb(39, 38, 38);
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.separator .title span {
+  color: #406d3a;
+  font-weight: normal;
+}
+
+.separator a {
+  text-decoration: none;
+}
+
+.separator-info-subtitle {
+  color: rgb(54, 54, 54);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 2%;
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+  border: 1px solid gray;
+}
+#arrow{
+  transform: rotate(90deg); 
+  position:absolute; 
+  font-size:50px;
+   margin-top:90px
+}
+
+.hero-inner {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+}
+
+.stores {
+  text-align: center;
+}
+
+.separator-info-subtitle:hover {
+  background-color: #f3f3f3;
+}
+
+.site-footer {
+  background-color: #26272b;
+  padding: 45px 0 10px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.site-footer a {
+  color: #737373;
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+.footerLinks {
+  padding-left: 0;
+  list-style: none;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  margin-left: calc(50% - 80px);
+}
+.site-footer img {
+  margin-right: 10px;
+}
+
+#main-page{
+  height: 100%;
+}
+
+.search-nearby {
+  width: 70%;
+  height: 100%;
+  margin-bottom:20px;
+  background-color: rgba(219, 220, 221, 0.623);
+  margin-right: auto;
+  margin-left: auto;
+  overflow-y: auto;
+  border-color: #000;
+}
+
+.results {
+  display: flex;
+}
+
+.googleMap {
+  width: 90%;
+  height: 400px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.map-search-button,
+.postal-code-input {
+  margin-top: 3%;
+}
+
+.postal-code-input,
+.map-search-button {
+  margin-left: 20px;
+}
+
+.map-search-button {
+  height: 35px;
+}
+
+.input-box {
+  height: 30px;
+}
+
+.postal-code-input {
+  display: inline-block;
+  vertical-align: auto;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 10px 20px;
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.main-navigation .current-menu-item a,
+.main-navigation a:hover {
+  color: #faf0ca;
+}
+
+.main-navigation {
+  padding-top: 2px;
+  float: right;
+  margin-top: 50px;
+}
+
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  margin-right: 100px;
+}
+
+.main-navigation ul:before,
+.main-navigation ul:after {
+  content: " ";
+  display: table;
+}
+
+.main-navigation ul:after {
+  clear: both;
+}
+
+.separator-info-subtitle {
+  cursor: pointer;
+}
+
+#logo{
+  width:150px;
+  height:96px;
+  margin-left:2%;
+  margin-top:20px
+}

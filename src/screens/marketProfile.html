@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Market Profile</title>
+    <link rel="stylesheet" type="text/css" href="../styles/profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id='profileImgContainer'>
+        <img id="profileIconImg" src="../images/profileIcon.png">
+    </div>
+    <img id="iconImg" src="../images/marketPhoto.jpg">
+        <div id="info" style="margin-left:250px;font-weight: normal">
+            <h3 >11 Market</h3>
+            <div style="display: flex">
+            <h4><a href="followers">10k</a> followers</h2>
+            </div>
+        </div>
+    <h3 id='stars'>4.9 stars</h3>
+    <h4 id='bestMarketText'>"Best market in town"</h4>
+    <div id="dashboardBar" style="height:170px">
+        <ul style="margin-left:-20px">
+            <li style="color:red">Open</li>
+            <li>Address: 127 Zelda St.</li>
+            <li>Mobile: +1 (647) 914-4563</li>
+            <li>Opening hours: 9am - 10pm (Everyday)</li>
+        </ul>
+    </div>
+    <div class="Points">
+        <div id="post">
+            <div id="container">
+                <h4 style="font-weight: normal">There are plenty of ways to earn points. And the best part... you can then exchange them for produce!</h4>
+                <h3>1) Post your fruits purchase and earn 70+ points</h3>
+                <div class="post">
+                    <div id="photo">
+                        <h3 style="position: absolute">Upload file +</h3>
+                    </div>
+                    <textarea type="text" placeholder='Leave a comment! Example: Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange'></textarea>
+                </div>
+                <button>POST</button>
+                <h3>2) Get +30 points for each friend that creates a profile</h3>
+                <h3>3) Get +200 points for having the best ranking of the month</h3>
+            </div>
+        </div>
+    </div>
+
+
+                <div id="container">
+                    <h2>See what 11 market was tagged in</h2>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying2.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying1.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying4.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying3.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying5.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying2.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying3.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying1.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying4.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying5.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying1.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                    <div class="manyPosts">
+                        <img id="photo" src="../images/buying2.jpg">
+                        <p>Today I bought all this amazing fruits in @11Market #globalImpact #makeAChange</p>
+                    </div>
+                </div>
+
+        </div>
+
+       
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.Markets').hide();
+            $('#net').addClass('active');
+            $('.Points').hide();
+            $('.Impact').hide();
+            $('.Search').hide();
+        });
+
+        function markets() {
+            $('.Markets').show();
+            $('li').removeClass('active');
+            $('#mark').addClass('active');
+            $('.Points').hide();
+            $('.Impact').hide();
+            $('.Network').hide();
+            $('.Search').hide();
+        }
+        function points() {
+            $('.Points').show();
+            $('.Markets').hide();
+            $('.Impact').hide();
+            $('.Network').hide();
+            $('li').removeClass('active');
+            $('#earn').addClass('active');
+            $('.Search').hide();
+        }
+        function impact() {
+            $('.Impact').show();
+            $('li').removeClass('active');
+            $('#imp').addClass('active');
+            $('.Markets').hide();
+            $('.Points').hide();
+            $('.Network').hide();
+            $('.Search').hide();
+        }
+        function network() {
+            $('.Network').show();
+            $('li').removeClass('active');
+            $('#net').addClass('active');
+            $('.Impact').hide();
+            $('.Markets').hide();
+            $('.Points').hide();
+            $('.Search').hide();
+        }
+         function search() {
+            $('.Search').show();
+            $('li').removeClass('active');
+            $('#nearby').addClass('active');
+            $('.Markets').hide();
+            $('.Points').hide();
+            $('.Impact').hide();
+            $('.Network').hide();
+        }
+
+
+
+    </script>
+</body>
+
+</html>

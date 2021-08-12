@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FoodSrc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/src/styles/index.css">
+    <meta http-equiv="refresh" content="60">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div style="margin-bottom:50px;">
+        <img id="logo" src="/src/images/logo.png">
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#">Our mission</a></li>
+                <li><a href="#">Nearby locations</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="/src/screens/dashboard.html">Market Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div style="height:600px">
+
+        <div id="main-page" class="main-page">
+            <div style="height:600px">
+                <div class="w3-container">
+                    <div class="hero-inner">
+                        <h1>Welcome to <span>FoodSrc</span></h1>
+                        <p>Making produce more accessible while reducing food waste.</p>
+                        <a class="separator-info-subtitle" href="profile.html">Join Us</a>
+                        <p id="arrow">⟶</p>
+                    </div>
+                    <section class="hero"></section>
+                </div>
+
+            </div>
+            <div class="our-mission">
+                <h2>Our mission</h2>
+                <p>At Food Src, our values-driven team aims to assist reduce food waste, while making healthy food
+                    accessible to everyone. Our easy to use web app will make over 800,000 families visit food banks every month in Canada while retailers are turning away food
+                    because it doesn’t meet the size & shape requirements to go on shelves. As Canadians, we waste 13
+                    million tonnes of food per year. Food is wasted in various areas of the food supply chain, and there
+                    is a large number from There is no reason why consumers & retailers shouldn’t benefit from selling
+                    these products.
+                    As we look to take better care of ourselves and fuel our bodies, the price tag for this goes up.</p>
+            </div>
+            <h2 style="text-align: center;">Search Nearby</h2>
+            <div class="search-nearby" id="search-nearby">
+                <span class="postal-code-input">
+                    <form class="postal-code-input">
+                        <input class="input-box" type="text" id="postal-code" placeholder="A1B 2C3">
+
+                    </form>
+
+                    <button id="map-search-button" class="map-search-button">Find Nearby Locations</button>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+                </span>
+
+                <div id="map">
+                    <div class="googleMap" id="googleMap"></div>
+
+                    <script>
+                        function myMap() {
+                            var location = { lat: 43.6677, lng: -79.3788 }
+                            var map = new google.maps.Map(document.getElementById("googleMap"), { zoom: 13.25, center: location });
+
+                            const image = "http://maps.google.com/mapfiles/ms/icons/orange-dot.png";
+
+                            var marker = new google.maps.Marker({ position: location, map: map, title: 'You are here' });
+                            marker.setMap(map);
+                            var jTP = { lat: 43.6677, lng: -79.3788 };
+                            var one = { lat: 43.658372, lng: -79.376439 };
+                            var two = { lat: 43.662061, lng: -79.380033 };
+                            var three = { lat: 43.669418, lng: -79.339293 };
+
+                            var marker = new google.maps.Marker({ position: jTP, map: map, title: 'You are Here' });
+                            var closest = new google.maps.Marker({ position: one, map: map, title: 'Foodland - Toronto', icon: image });
+                            var further = new google.maps.Marker({ position: two, map: map, title: 'Loblaws', icon: image });
+                            var furthest = new google.maps.Marker({ position: three, map: map, title: 'walmart', icon: image });
+
+                        }
+
+                    </script>
+
+                    <script async
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwol6frqbspgft2arNNSyr1cIEngYWXw0&callback=myMap"
+                        type="text/javascript">
+                        </script>
+                </div>
+
+            </div>
+
+            <footer class="site-footer">
+                <h6><a href="#Agencia">FoodSrc</a></h6>
+                <ul class="footerLinks">
+                    <li><img src="src/images/telephone.png">+423423423</li>
+                    <li><img src="src/images/email.png">foodsrc@contact.com</li>
+                </ul>
+                <hr>
+                <div class="copyrightText">
+                    <p class="copyright-text">Copyright &copy; 2021 - FoodSrc</p>
+                </div>
+            </footer>
+
+            <script>
+                $("#main-page").show();
+                $("#profile-page").hide();
+
+                $("#separator-info-subtitle").on('click', function () {
+
+                    console.log("clicked on join us!");
+
+                    $("#main-page").hide();
+                    $("#profile-page").show();
+                });
+
+
+            </script>
+
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+</body>
+
+</html>

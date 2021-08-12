@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  /* background-color: white; 
+    color:#26272b;
+    letter-spacing: 0.2px; */
+  font-family: "Roboto", sans-serif;
+}
+
+#info {
+  margin-left: 250px;
+  font-weight: normal;
+}
+
+#info h4 {
+  font-weight: normal;
+  margin: 0px;
+  margin-right: 15px;
+}
+
+#info a {
+  text-decoration: none;
+  color: rgb(45, 97, 38);
+}
+#info h3 {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+#dashboardBar {
+  height: 140px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: 60px;
+  width: 250px;
+  background-color: #fff7ff;
+  border: 1px solid gray;
+}
+
+#dashboardBar ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+#dashboardBar li {
+  margin-top: 3%;
+}
+
+#container {
+  position: absolute;
+  left: 400px;
+  top: 300px;
+  margin-top: 60px;
+  width: 70%;
+  height: 100%;
+}
+
+.post {
+  height: 400px;
+  width: 350px;
+  border: 1px solid gray;
+}
+#dashboardBar a {
+  text-decoration: none;
+  color: black;
+}
+#dashboardBar li:hover {
+  text-decoration: none;
+  background-color: rgb(168, 202, 160);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+.active {
+  text-decoration: none;
+  background-color: rgb(168, 202, 160);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+#dashboardBar li {
+  padding: 4px;
+  padding-left: 10px;
+}
+
+.manyPosts {
+  height: 300px;
+  width: 250px;
+  border: 1px solid gray;
+  float: left;
+  margin: 2%;
+}
+
+.Network .manyPosts {
+  height: 300px;
+  width: 250px;
+  border: 1px solid gray;
+  float: left;
+  margin: 3%;
+}
+
+.networkPosts {
+  height: 300px;
+  width: 80%;
+  border: 1px solid gray;
+  margin: 2%;
+}
+
+.networkPosts #photo {
+  position: relative;
+  height: 300px;
+  width: 250px;
+  border-bottom: 1px solid gray;
+  float: left;
+}
+
+.networkPosts p {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.networkProfile {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  z-index: 1;
+  margin-top: -20px;
+  margin-left: -50px;
+  background-color: gray;
+}
+.photo #comment {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  margin-top: 85.5%;
+  border: 1px solid gray;
+}
+
+.post #photo {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.post textarea {
+  position: relative;
+  height: 92px;
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+:placeholder-shown {
+  top: 5px;
+  resize: none;
+}
+
+input[type="text"] {
+  float: right;
+  padding: 6px;
+  margin-top: 18px;
+  margin-right: 90px;
+  width: 250px;
+  font-size: 17px;
+  border: 1px solid gray;
+}
+
+#container h2 {
+  font-weight: normal;
+}
+
+#container h3 {
+  font-weight: normal;
+}
+
+.post h3 {
+  margin-left: 30%;
+  margin-top: 125px;
+  font-weight: normal;
+}
+
+#container button {
+  width: 350px;
+  color: white;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 3px;
+  background-color: rgb(139, 202, 139);
+}
+
+.manyPosts #photo {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.manyPosts p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.manyPosts h3 {
+  margin-left: 30%;
+  margin-top: 95px;
+  font-weight: normal;
+}
+
+#profileImgContainer {
+  background-color:rgb(241, 241, 241);
+  height:170px;
+  color:black;
+}
+#subtitle{
+  margin-left:30px; font-weight: normal;
+}
+
+#bestMarketText{
+  margin-left:70px; font-weight: normal;
+}
+
+#pointsText{
+  margin-left:100px; margin-top:40px;font-weight: normal
+}
+#profileIconImg {
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#iconImg {
+  border-radius: 100px;
+  height: 180px;
+  width: 180px;
+  background-color: beige;
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+
+#stars{
+  margin-left:105px; margin-top:40px;color:rgb(236, 169, 44)
+}
